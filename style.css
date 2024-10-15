@@ -7,7 +7,7 @@
 
 /* Globalny styl dla całej strony */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
@@ -15,7 +15,8 @@ body {
 
 /* Kontener dla zawartości */
 .container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -32,10 +33,15 @@ header h1 {
     font-size: 2.5em;
 }
 
-nav ul {
-    list-style: none;
+/* Navbar */
+nav {
     text-align: center;
     margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
 nav ul li {
@@ -48,12 +54,12 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
-    background-color: #0056b3;
+    transition: background-color 0.3s ease;
     border-radius: 5px;
 }
 
 nav ul li a:hover {
-    background-color: #003f7f;
+    background-color: #0056b3;
 }
 
 /* Hero section */
@@ -84,6 +90,7 @@ section h2 {
     font-size: 2em;
 }
 
+/* Stopka */
 footer {
     background: #333;
     color: #fff;

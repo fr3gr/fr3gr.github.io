@@ -1,17 +1,7 @@
-// Add event listener to navigation links
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', event => {
-        event.preventDefault();
-        document.querySelector(event.target.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
-// Initialize map
-const map = document.getElementById('map');
-const mapOptions = {
-    center: { lat: 37.7749, lng: -122.4194 },
-    zoom: 12
-};
-const mapInstance = new google.maps.Map(map, mapOptions);
+// Load the navbar from navbar.html
+fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading the navbar:', error));
