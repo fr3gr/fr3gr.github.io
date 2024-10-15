@@ -3,32 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Moja Strona na GitHub Pages</title>
+    <title>Moja Najlepsza Strona</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Witaj na mojej stronie!</h1>
+        <h1>Witaj na Mojej Stronie!</h1>
         <button class="menu-btn">Menu</button>
+        <nav>
+            <ul>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav id="menu" class="menu">
-        <ul>
-            <li><a href="#home">Strona Główna</a></li>
-            <li><a href="#about">O mnie</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
-    </nav>
+    <section id="about">
+        <h2>O mnie</h2>
+        <p>Jestem pasjonatem programowania i technologii. Uwielbiam tworzyć strony internetowe oraz aplikacje.</p>
+    </section>
 
-    <section>
-        <p>To jest moja pierwsza strona hostowana na <strong>GitHub Pages</strong>!</p>
-        <p>Możesz edytować ten plik, aby dostosować treść strony.</p>
-        <p><a href="https://github.com">Odwiedź GitHub</a></p>
+    <section id="portfolio">
+        <h2>Moje Portfolio</h2>
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/300" alt="Projekt 1">
+            <h3>Projekt 1</h3>
+            <p>Opis projektu 1.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/300" alt="Projekt 2">
+            <h3>Projekt 2</h3>
+            <p>Opis projektu 2.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/300" alt="Projekt 3">
+            <h3>Projekt 3</h3>
+            <p>Opis projektu 3.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <form>
+            <label for="name">Imię:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Wyślij</button>
+        </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 Moja Strona. Wszystkie prawa zastrzeżone.</p>
+        <p>© 2024 Moja Strona. Wszystkie prawa zastrzeżone.</p>
     </footer>
 
     <script src="script.js"></script>

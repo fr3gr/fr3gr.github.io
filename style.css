@@ -8,23 +8,21 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Stylowanie nagłówka */
 header {
     background-color: #333;
     color: white;
-    padding: 15px 20px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
 h1 {
-    margin: 0;
     font-size: 24px;
 }
 
@@ -75,27 +73,64 @@ nav ul li a:hover {
     background-color: #444;
 }
 
-/* Sekcja strony głównej */
+/* Sekcje */
 section {
     margin: 40px 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item {
+    display: inline-block;
+    margin: 20px;
     text-align: center;
 }
 
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Formularz */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Stopka */
 footer {
     background-color: #333;
     color: white;
     padding: 10px;
     text-align: center;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
-}
-
-a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
