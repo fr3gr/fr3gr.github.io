@@ -3,85 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+    <title>Moja Strona</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#hero">Hero</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="hero">
-            <img src="landscape.jpg" alt="Landscape Image">
-            <h1>Welcome to my GitHub Page</h1>
-        </section>
-        <section id="about">
-            <h2>About me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-            <button>Learn more</button>
-        </section>
-        <section id="skills">
-            <h2>My Skills</h2>
+    <header>
+        <div class="container">
+            <h1>Witaj na mojej stronie!</h1>
+            <nav>
+                <ul>
+                    <li><a href="#o-mnie">O mnie</a></li>
+                    <li><a href="#projekty">Projekty</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#pliki">Pliki do pobrania</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="o-mnie">
+        <div class="container">
+            <h2>O mnie</h2>
+            <p>Cześć! Jestem [Twoje Imię], zajmuję się [Twoje Zainteresowania/Branża]. Na tej stronie dzielę się swoimi projektami, wpisami na blogu oraz plikami, które możesz pobrać.</p>
+        </div>
+    </section>
+
+    <section id="projekty">
+        <div class="container">
+            <h2>Projekty</h2>
             <ul>
-                <li>
-                    <span>HTML/CSS</span>
-                    <div class="progress-bar" data-progress="80"></div>
-                </li>
-                <li>
-                    <span>JavaScript</span>
-                    <div class="progress-bar" data-progress="90"></div>
-                </li>
-                <li>
-                    <span>React</span>
-                    <div class="progress-bar" data-progress="70"></div>
-                </li>
+                <li><a href="https://github.com/twoj-projekt1" target="_blank">Projekt 1</a></li>
+                <li><a href="https://github.com/twoj-projekt2" target="_blank">Projekt 2</a></li>
             </ul>
-        </section>
-        <section id="projects">
-            <h2>My Projects</h2>
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="container">
+            <h2>Blog</h2>
+            <article>
+                <h3>Tytuł wpisu 1</h3>
+                <p>Treść Twojego pierwszego wpisu na blogu.</p>
+            </article>
+            <article>
+                <h3>Tytuł wpisu 2</h3>
+                <p>Treść Twojego drugiego wpisu na blogu.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="pliki">
+        <div class="container">
+            <h2>Pliki do pobrania</h2>
             <ul>
-                <li>
-                    <img src="project1.jpg" alt="Project 1">
-                    <h3>Project 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </li>
-                <li>
-                    <img src="project2.jpg" alt="Project 2">
-                    <h3>Project 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </li>
-                <li>
-                    <img src="project3.jpg" alt="Project 3">
-                    <h3>Project 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </li>
+                <li><a href="files/pliki1.zip" download>Pobierz plik 1</a></li>
+                <li><a href="files/pliki2.zip" download>Pobierz plik 2</a></li>
             </ul>
-        </section>
-        <section id="contact">
-            <h2>Get in Touch</h2>
-            <form>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <textarea placeholder="Message"></textarea>
-                <button>Send</button>
-            </form>
-            <div id="map"></div>
-        </section>
-    </main>
+        </div>
+    </section>
+
     <footer>
-        <ul>
-            <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-        </ul>
-        <p>&copy; 2023 My GitHub Page</p>
+        <div class="container">
+            <p>&copy; 2024 Twoje Imię. Wszelkie prawa zastrzeżone.</p>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
