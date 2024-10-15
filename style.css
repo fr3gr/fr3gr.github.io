@@ -1,39 +1,45 @@
+/* Resetowanie marginesów i paddingów */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Globalny styl dla całej strony */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
 }
 
+/* Kontener dla zawartości */
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Nagłówek */
 header {
-    background: #333;
+    background: #007BFF;
     color: #fff;
     padding: 20px 0;
 }
 
 header h1 {
     text-align: center;
+    font-size: 2.5em;
 }
 
 nav ul {
     list-style: none;
     text-align: center;
+    margin-top: 10px;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 15px;
 }
 
@@ -41,8 +47,33 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 15px;
+    background-color: #0056b3;
+    border-radius: 5px;
 }
 
+nav ul li a:hover {
+    background-color: #003f7f;
+}
+
+/* Hero section */
+.hero {
+    background: #e9ecef;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Sekcje strony */
 section {
     padding: 40px 0;
 }
@@ -50,6 +81,7 @@ section {
 section h2 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 2em;
 }
 
 footer {
