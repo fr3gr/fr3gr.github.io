@@ -1,29 +1,39 @@
+/* Reset stylów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
+/* Stylowanie nagłówka */
 header {
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 h1 {
     margin: 0;
+    font-size: 24px;
 }
 
+/* Stylowanie przycisku menu */
 .menu-btn {
     background-color: #3498db;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 15px;
     cursor: pointer;
     font-size: 16px;
 }
@@ -32,53 +42,53 @@ h1 {
     background-color: #2980b9;
 }
 
-.menu {
+/* Stylowanie menu */
+nav {
     display: none;
-    background-color: #333;
-    padding: 10px 0;
     position: absolute;
     top: 70px;
     right: 20px;
-    width: 200px;
-    text-align: left;
+    background-color: #333;
+    border-radius: 5px;
 }
 
-.menu ul {
+nav.active {
+    display: block;
+}
+
+nav ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
 
-.menu ul li {
+nav ul li {
     margin: 10px 0;
 }
 
-.menu ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
     display: block;
 }
 
-.menu ul li a:hover {
+nav ul li a:hover {
     background-color: #444;
 }
 
-.menu.active {
-    display: block;
-}
-
+/* Sekcja strony głównej */
 section {
-    margin: 20px;
+    margin: 40px 20px;
+    text-align: center;
 }
 
 footer {
     background-color: #333;
     color: white;
     padding: 10px;
+    text-align: center;
     position: fixed;
-    width: 100%;
     bottom: 0;
+    width: 100%;
 }
 
 a {
