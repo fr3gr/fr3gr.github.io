@@ -2,6 +2,9 @@ body {
     background-color:blueviolet;
 }
 
+/* style.css */
+
+/* Ogólne style dla nawigacji */
 nav {
     background-color: rgba(255, 255, 255, 0.2); /* półprzezroczyste tło */
     backdrop-filter: blur(10px); /* efekt rozmycia tła */
@@ -18,7 +21,7 @@ nav {
     z-index: 100;
   }
   
-  /* Linki po bokach */
+  /* Styl dla linków */
   nav ul {
     display: flex;
     list-style: none;
@@ -48,9 +51,6 @@ nav {
     font-size: 20px;
     font-weight: bold;
     margin: 0;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%); /* Wyśrodkowanie w poziomie */
   }
   
   /* Dopasowanie wyglądu navbaru na mniejszych ekranach */
@@ -60,13 +60,6 @@ nav {
     }
   
     nav ul li {
-      margin: 10px 0;
-    }
-  
-    /* Wyśrodkowanie napisu na małych ekranach */
-    nav h1 {
-      position: static;
-      transform: none;
       margin: 10px 0;
     }
   }
