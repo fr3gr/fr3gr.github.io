@@ -1,5 +1,5 @@
 body {
-    background-color: blueviolet;
+    background-color:blueviolet;
 }
 
 nav {
@@ -18,7 +18,7 @@ nav {
     z-index: 100;
   }
   
-  /* Styl dla linków */
+  /* Linki po bokach */
   nav ul {
     display: flex;
     list-style: none;
@@ -48,6 +48,9 @@ nav {
     font-size: 20px;
     font-weight: bold;
     margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Wyśrodkowanie w poziomie */
   }
   
   /* Dopasowanie wyglądu navbaru na mniejszych ekranach */
@@ -57,6 +60,13 @@ nav {
     }
   
     nav ul li {
+      margin: 10px 0;
+    }
+  
+    /* Wyśrodkowanie napisu na małych ekranach */
+    nav h1 {
+      position: static;
+      transform: none;
       margin: 10px 0;
     }
   }
